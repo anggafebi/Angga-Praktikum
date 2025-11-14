@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulir Pendaftaran Anggota Perpustakaan Kota Madiun</title>
+</head>
+
+<body>
+
+    <form action="formulir_perpuskotamadiun.html" method="get">
+        <h2>Pendaftaran Anggota Perpustakaan Kota Madiun</h2>
+
+        <label for="nama_perpus">Nama Lengkap:</label>
+        <input type="text" id="nama_perpus" name="nama" value="Masukkan Nama Anda"><br><br>
+
+        <label for="password_perpus">Kata Sandi (untuk login online):</label>
+        <input type="password" id="password_perpus" name="password"><br><br>
+
+        <label>Jenis Keanggotaan:</label><br>
+        <input type="radio" id="pelajar" name="jenis_anggota" value="Pelajar" checked>
+        <label for="pelajar">Pelajar/Mahasiswa</label>
+        <input type="radio" id="umum" name="jenis_anggota" value="Umum">
+        <label for="umum">Umum</label><br><br>
+
+        <label>Minat Baca (Pilih lebih dari satu):</label><br>
+        <input type="checkbox" id="minat_fiksi" name="minat_fiksi" checked>
+        <label for="minat_fiksi">Fiksi (Novel)</label>
+        <input type="checkbox" id="minat_ilmiah" name="minat_ilmiah">
+        <label for="minat_ilmiah">Ilmiah/Edukasi</label>
+        <input type="checkbox" id="minat_sejarah" name="minat_sejarah">
+        <label for="minat_sejarah">Sejarah & Budaya</label><br><br>
+
+        <label for="alamat_asal">Domisili Asal (KTP):</label>
+        <select id="alamat_asal" name="alamat_asal">
+            <option value="Madiun_Kota">Madiun Kota</option>
+            <option value="Madiun_Kab">Madiun Kabupaten</option>
+            <option value="Luar_Madiun">Luar Madiun</option>
+        </select><br><br>
+
+        <label for="saran_buku">Saran Koleksi Buku (Opsional):</label><br>
+        <textarea id="saran_buku" name="saran_buku" rows="4" cols="50">Tuliskan jenis buku yang Anda harapkan tersedia...</textarea><br><br>
+
+        <input type="submit" value="Daftar Anggota">
+    </form>
+
+</body>
+
+</html>

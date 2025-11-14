@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulir Pendaftaran Kunjungan Klinik Sehat Madiun</title>
+</head>
+
+<body>
+
+    <form action="submit_klinik.html" method="get">
+        <h2>Pendaftaran Kunjungan Klinik Sehat Madiun</h2>
+
+        <label for="nama_pasien">Nama Pasien:</label>
+        <input type="text" id="nama_pasien" name="nama_pasien" value="Nama Pasien"><br><br>
+
+        <label for="kode_verif">Kode Verifikasi (contoh: 4 digit terakhir NIK):</label>
+        <input type="password" id="kode_verif" name="kode_verif" maxlength="4"><br><br>
+
+        <label>Status Pasien:</label><br>
+        <input type="radio" id="pasien_baru" name="status_pasien" value="Baru" checked>
+        <label for="pasien_baru">Pasien Baru</label>
+        <input type="radio" id="pasien_lama" name="status_pasien" value="Lama">
+        <label for="pasien_lama">Pasien Lama</label><br><br>
+
+        <label>Riwayat Kesehatan:</label><br>
+        <input type="checkbox" id="alergi_obat" name="alergi_obat">
+        <label for="alergi_obat">Memiliki Riwayat Alergi Obat</label>
+        <input type="checkbox" id="riwayat_darah" name="riwayat_darah">
+        <label for="riwayat_darah">Riwayat Tekanan Darah Tinggi</label><br><br>
+
+        <label for="poli_tujuan">Poli Tujuan:</label>
+        <select id="poli_tujuan" name="poli_tujuan">
+            <option value="Umum">Poli Umum</option>
+            <option value="Gigi">Poli Gigi</option>
+            <option value="KIA">Poli KIA</option>
+        </select><br><br>
+
+        <label for="keluhan_utama">Keluhan Utama:</label><br>
+        <textarea id="keluhan_utama" name="keluhan_utama" rows="5" cols="50">Jelaskan keluhan Anda secara singkat...</textarea><br><br>
+
+        <input type="submit" value="Daftar Kunjungan">
+    </form>
+
+</body>
+
+</html>
